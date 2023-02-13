@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Hylia Serif";
+    src:  url("../fonts/hyliaserif.ttf");
+}
+
+body {
+    font-family: "Hylia Serif", "Helvetica", serif;
+
+    background-image: url("../img/keyArt.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div {
+    margin-left: 1em;
+    margin-top: 15%;
+}
+
+span {
+    padding: 0.2em;
+    background: rgba(255,255,255,0.4);
+    font-size: 3em;
+    color: rgb(74, 213, 136);
+}
