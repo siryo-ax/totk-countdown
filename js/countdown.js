@@ -1,4 +1,4 @@
-var totkOut = new Date("May 12, 2023 00:00:00").getTime();
+var totkOut = new Date("May 12, 2023 06:00:00").getTime();
 
 function countdown() {
     var now = new Date().getTime();
@@ -10,7 +10,10 @@ function countdown() {
     var mins = Math.floor((wait%(1000*60*60))/(1000*60));
     var secs = Math.floor((wait%(1000*60))/(1000));
 
-    document.getElementById("cdown").textContent = days+" jours "+hours+" heures "+mins+" minutes "+secs+" secondes";
+    document.getElementById("days").textContent = days+" jours ";
+    document.getElementById("hours").textContent = hours+" heures "
+    document.getElementById("mins").textContent = mins+" minutes ";
+    document.getElementById("secs").textContent = secs+" secondes";
 }
 
-setInterval(countdown,1000); 
+setInterval(countdown,1000);

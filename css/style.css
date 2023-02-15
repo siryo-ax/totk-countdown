@@ -6,19 +6,54 @@
 body {
     font-family: "Hylia Serif", "Helvetica", serif;
 
-    background-image: url("../img/keyArt.jpg");
+    background-image: url("../img/keyArt-large.jpg");
     background-attachment: fixed;
     background-size: cover;
+    background-position-x: center;
 }
 
 div {
-    margin-left: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    margin-left: 5%;
     margin-top: 15%;
-}
-
-span {
     padding: 0.2em;
+
     background: rgba(255,255,255,0.4);
     font-size: 3em;
     color: rgb(74, 213, 136);
+    width: fit-content;
+}
+
+div > span {
+    margin-inline: 0.2em;
+}
+
+@media screen and (max-width: 1100px) {
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        margin-inline: 20%;
+
+        height: fit-content;
+    }
+
+    div > span {
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        background-image: url("../img/keyArt-small.jpg");
+    }
+
+    div {
+        margin-inline: 5%;
+    }
 }
