@@ -42,6 +42,13 @@ p {
 
 /*Organisation du contenu*/
 
+audio {
+    position: fixed;
+    left: 90%;
+    top: 0%;
+
+    width: 10%;
+}
 
 #trailers > section {
     margin-bottom: 15rem;
@@ -114,6 +121,11 @@ iframe {
     #countdown > span {
         margin-top: 0.2em;
         margin-bottom: 0.2em;
+    }
+
+    audio {
+        left: 70%;
+        width: 30%;
     }
 }
 
